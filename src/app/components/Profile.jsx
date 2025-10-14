@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaInstagram, FaLocationDot, FaMailchimp, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaLocationDot, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { img } from "../assets/assets";
 
