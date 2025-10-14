@@ -45,12 +45,12 @@ export default function LinkSection({ href, title, description }) {
             whileHover="hover"
             className={` 
                 ${index === 0 ? "animate-bounce" : ""}
-                w-full border text-gray-600 cursor-pointer p-3 text-lg bg-[#FFFFFE] rounded-2xl flex gap-4 `}
+                w-full border text-gray-600 cursor-pointer p-2 px-4 text-lg bg-[#FFFFFE] rounded-2xl flex gap-4 `}
           >
             <div className="text-[3rem] font-bold text-gray-800">
               {social.icon}
             </div>
-            <div className="text-center flex-1">
+            <div className="text-right flex-1">
               <h2 className="text-lg text-gray-800">{social.platform}</h2>
               <p className="text-sm text-gray-400">{social.text}</p>
             </div>

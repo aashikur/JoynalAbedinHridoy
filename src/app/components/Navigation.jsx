@@ -24,7 +24,7 @@ export default function Navigation() {
                 target="_blank"
                 className="border hover:opacity-80 text-sm border-gray-600 rounded-lg p-1 px-4 flex items-center gap-2 text-green-400 hover:text-green-300 transition"
             >
-                Quick Connect WhatsApp
+                <span className="hidden sm:inline-block">Quick Connect </span>WhatsApp
             </Link>
 
         </div>
