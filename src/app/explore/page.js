@@ -1,0 +1,66 @@
+
+import Image from "next/image";
+import { IoMdArrowDown } from "react-icons/io";
+
+import { FaArrowAltCircleDown } from "react-icons/fa";
+import { img } from "../assets/assets";
+import Navbar from "../components/Navbar";
+import Profile from "../components/Profile";
+import LinkSection from "../components/LinkSection";
+import Gallery from "../components/Gallery";
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+export default function ExplorePage() {
+    return     <>
+      <Navbar />
+      <div className="flex flex-col   justify-center">
+        <div className="text-center">
+          {/* Profile Image */}
+          <Profile />
+
+          {/* Gallery Sections */}
+          <Gallery/>
+        </div>
+
+        <div className="mt-10 text-center">
+          <p className="text-gray-600 text-sm">Back to Home Page</p>
+          <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
+            <IoMdArrowDown className="text-[1.5rem] transform rotate-90 transition-transform duration-300 group-hover:-translate-x-1" />
+          </button>
+
+
+
+        </div>
+
+      </div>
+
+
+      <footer className="text-center py-4 border-t border-gray-700 mt-10">
+        <p className="text-sm text-gray-400">&copy; 2025 Joynal Abedin Hridoy. All rights reserved.</p>
+      </footer>
+
+    </>;
+}
+
+
+
+
+
+const metadata = {
+  title: 'Joynal Abedin Hridoy | Video Editor | Sound Design | Motion Graphic',
+  description: 'Video is a story that Mound a unmount word into visual wiout saying a word.',
+}
+
+export { metadata }
