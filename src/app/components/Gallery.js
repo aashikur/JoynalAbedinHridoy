@@ -30,7 +30,8 @@ export default function Gallery() {
   };
 
   return (
-    <div className="mt-10 max-w-[600px] mx-auto">
+    <div className="mt-10 max-w-[600px] mx-auto"> 
+    
       <motion.div
         variants={containerVariants}
         initial="hidden"

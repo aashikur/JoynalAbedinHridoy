@@ -9,6 +9,7 @@ import Profile from "../components/Profile";
 import LinkSection from "../components/LinkSection";
 import Gallery from "../components/Gallery";
 import Link from "next/link";
+import ProjectGallery from "../components/ProjectGallery";
 
 
 
@@ -62,7 +63,7 @@ export default function ExplorePage() {
         </div>
 
         {/* Gallery Sections */}
-        <Gallery />
+        <ProjectGallery />
       </div>
 
       <div className="mt-10 text-center">
