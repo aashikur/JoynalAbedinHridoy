@@ -1,7 +1,8 @@
-import { FaFacebook, FaGithub, FaGithubAlt, FaInstagram, FaInstagramSquare, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaGithubAlt, FaInstagram, FaInstagramSquare, FaPinterest, FaSpotify, FaYoutube } from 'react-icons/fa';
 import profile from './profile.png';
 import { FaLinkedin } from 'react-icons/fa6';
 
+import { IoLogoFacebook } from "react-icons/io";
 
 
 
@@ -19,7 +20,8 @@ export const user = {
             platform: "Facebook",
             link: "https://www.facebook.com/joynalabedinhridoy",
             text: "My social link",
-            icon: <FaFacebook/>
+            icon: <IoLogoFacebook />
+
 
         }, {
             platform: "LinkedIn",
@@ -31,7 +33,8 @@ export const user = {
             platform: "GitHub",
             link: "https//github.com/joynalabedinhridoy",
             text: "My code repository",
-            icon: <FaGithubAlt/>
+            icon: <FaGithub />
+
 
         }, 
         {
@@ -46,6 +49,21 @@ export const user = {
             link: "https://www.instagram.com/joynalabedinhridoy",
             text: "Cool stuff",
             icon: <FaInstagramSquare/>
+
+        },
+        {
+            platform: "Pinterest",
+            link: "https://www.instagram.com/joynalabedinhridoy",
+            text: "Yes i love cool stuff",
+            icon: <FaPinterest/>
+
+        },
+
+        {
+            platform: "Spotify",
+            link: "https://www.instagram.com/joynalabedinhridoy",
+            text: "Playlist that keeps me going",
+            icon: <FaSpotify/>
 
         }
     ]
