@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaInstagram, FaLocationDot, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { img } from "../assets/assets";
+import { FaTiktok, FaTwitter } from "react-icons/fa";
 
 
 export default function Profile({ href, title, description }) {
@@ -23,7 +24,7 @@ export default function Profile({ href, title, description }) {
                 <MdOutlineMailOutline />
                 <FaInstagram />
                 <FaYoutube />
-                <FaWhatsapp />
+                <FaTwitter />
               </p>
               <p className="text-gray-500 mt-4 max-w-md mx-auto hidden">
                 A video is a story that speaks without words, <br></br>Connect with unrevealed emotions.

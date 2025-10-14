@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import LinkSection from "./components/LinkSection";
 import Profile from "./components/Profile";
 import { FaArrowAltCircleDown } from "react-icons/fa";
+import Navigation from "./components/Navigation";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -17,15 +19,19 @@ export default function Home() {
           {/* Profile Image */}
           <Profile />
 
+          <Navigation />
+
           {/* Link Sections */}
           <LinkSection />
         </div>
 
         <div className="mt-10 text-center">
           <p className="text-gray-600 text-sm">Explore other side of Hridoy</p>
-          <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
-            <IoMdArrowDown className="text-[1.5rem] transform -rotate-135 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
-          </button>
+          <Link href={'/explore'}>
+            <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
+              <IoMdArrowDown className="text-[1.5rem] transform -rotate-135 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+            </button>
+          </Link>
 
 
 

@@ -9,6 +9,7 @@ import Profile from "../components/Profile";
 import LinkSection from "../components/LinkSection";
 import Gallery from "../components/Gallery";
 import Link from "next/link";
+import Navigation from "../components/Navigation";
 
 
 
@@ -25,10 +26,6 @@ import Link from "next/link";
 
 export default function ExplorePage() {
 
-  const phone = "01511762807"; // your number
-  const message = encodeURIComponent(
-    "Hey, I viewed your profile and wanted to discuss a topic with you (formally)."
-  );
 
 
 
@@ -41,25 +38,7 @@ export default function ExplorePage() {
         <Profile />
 
         {/* Link Sections */}
-        <div className="mt-6 flex justify-center gap-4">
-          <Link href={'/'} className="border hover:opacity-75 text-sm border-gray-600 rounded-lg p-1 px-4">
-            Home
-          </Link>
-          <Link href={'/explore'} className="border hover:opacity-75 text-sm border-gray-600 rounded-lg p-1 px-4">
-            Gallery
-          </Link>
-          <Link href={'/projects'} className="border hover:opacity-75 text-sm border-gray-600 rounded-lg p-1 px-4">
-            Projects
-          </Link>
-          <Link
-            href={`https://wa.me/88${phone}?text=${message}`}
-            target="_blank"
-            className="border hover:opacity-80 text-sm border-gray-600 rounded-lg p-1 px-4 flex items-center gap-2 text-green-400 hover:text-green-300 transition"
-          >
-           Quick Connect WhatsApp 
-          </Link>
-
-        </div>
+        <Navigation/>
 
         {/* Gallery Sections */}
         <Gallery />
@@ -67,9 +46,11 @@ export default function ExplorePage() {
 
       <div className="mt-10 text-center">
         <p className="text-gray-600 text-sm">Back to Home Page</p>
+<Link href={'/'}>
         <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
           <IoMdArrowDown className="text-[1.5rem] transform rotate-90 transition-transform duration-300 group-hover:-translate-x-1" />
         </button>
+</Link>
 
 
 
