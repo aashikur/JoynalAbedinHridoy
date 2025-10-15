@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 import Navigation from "./components/Navigation";
 import Link from "next/link";
+import NavButton from "@/app/components/ui/NavButton";
 
 
 export default function Home() {
@@ -27,12 +28,9 @@ export default function Home() {
 
         <div className="mt-10 text-center">
           <p className="text-gray-600 text-sm">Explore other side of Hridoy</p>
-          <Link href={'/explore'}>
-            <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
-              <IoMdArrowDown className="text-[1.5rem] transform -rotate-135 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
-            </button>
-          </Link>
-
+          
+          {/* NavButton  */}
+          <NavButton to={'/explore'}/>
 
 
         </div>

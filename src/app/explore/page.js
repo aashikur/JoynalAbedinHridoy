@@ -10,6 +10,7 @@ import LinkSection from "../components/LinkSection";
 import Gallery from "../components/Gallery";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+import NavButton2 from "@/app/components/ui/NavButton2";
 
 
 
@@ -38,7 +39,7 @@ export default function ExplorePage() {
         <Profile />
 
         {/* Link Sections */}
-        <Navigation/>
+        <Navigation />
 
         {/* Gallery Sections */}
         <Gallery />
@@ -46,11 +47,8 @@ export default function ExplorePage() {
 
       <div className="mt-10 text-center">
         <p className="text-gray-600 text-sm">Back to Home Page</p>
-<Link href={'/'}>
-        <button className="border border-gray-500 rounded-md p-2 mt-2 cursor-pointer group hover:text-gray-700 hover:bg-gray-200 transition">
-          <IoMdArrowDown className="text-[1.5rem] transform rotate-90 transition-transform duration-300 group-hover:-translate-x-1" />
-        </button>
-</Link>
+
+      <NavButton2 to="/"/>
 
 
 
